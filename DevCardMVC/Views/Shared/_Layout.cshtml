@@ -19,20 +19,23 @@
 
 <body>
 
-    <partial name="Header"/>
+<partial name="Header"/>
 
-    <div class="main-wrapper">
-        
-        @RenderBody()
+<div class="main-wrapper">
 
-        <partial name="Footer"/>
+    @RenderBody()
 
-    </div>
+    <partial name="Footer"/>
 
-    <!-- Javascript -->
-    <script src="~/assets/plugins/jquery-3.4.1.min.js"></script>
-    <script src="~/assets/plugins/popper.min.js"></script>
-    <script src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+</div>
+
+<!-- Javascript -->
+<script src="~/assets/plugins/jquery-3.4.1.min.js"></script>
+<script src="~/assets/plugins/popper.min.js"></script>
+<script src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+@* Validation jquery scripts (unobtrusive)*@
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 </body>
 
 </html>

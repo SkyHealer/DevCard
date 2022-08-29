@@ -15,9 +15,24 @@ namespace DevCardMVC.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Contact()
         {
-            return View();
+            var model = new ContactForm();
+            return View(model);
+        }
+
+        // [HttpPost]
+        // public JsonResult Contact(IFormCollection form)
+        // {
+        //     var name = form["name"];
+        //     return Json(Ok());
+        // }
+
+        public JsonResult Contact(ContactForm form)
+        {
+            Console.WriteLine(form.ToString());
+            return Json(Ok());
         }
 
 
